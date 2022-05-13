@@ -24,12 +24,10 @@ class CovidDataFragment(val mcontext: Context, val title: String, val covid19Dat
         // Inflate the layout for this fragment
         recycler_view = view.findViewById(R.id.recyclerview)
         recycler_view.setVisibility(View.VISIBLE)
-        val layoutManager: RecyclerView.LayoutManager =
-            LinearLayoutManager(context)
+        val layoutManager: RecyclerView.LayoutManager = LinearLayoutManager(context)
         recycler_view.setLayoutManager(layoutManager)
         state = title
-        covid19DataAdapter =
-            Covid19DataAdapter(mcontext,title,covid19DataModel)
+        covid19DataAdapter = Covid19DataAdapter(mcontext,title,covid19DataModel)
 
         recycler_view.setAdapter(covid19DataAdapter)
         return view

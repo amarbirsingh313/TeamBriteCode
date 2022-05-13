@@ -8,4 +8,5 @@ interface TaskServiceAPI {
 
     @GET("/data.json")
     fun getCovid19Data(): Call<Covid19DataModel>
+    // test
 }
